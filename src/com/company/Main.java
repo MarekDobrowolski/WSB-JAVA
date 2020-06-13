@@ -6,7 +6,35 @@ public class Main
     public static void main(String[] args)
     {
 
-//oijedosdmcdsncisaudnckznxkcnusndicunwsdknzdCnzxohchhewiojclkxnzcndosaijcoiasj
+        Animal AnimalPet = new Animal();
+        AnimalPet.species = "horse";
+        AnimalPet.Feed();
+        AnimalPet.Feed();
+        AnimalPet.Feed();
+        AnimalPet.Feed();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+
+
+
+
+
+
 
 
 
