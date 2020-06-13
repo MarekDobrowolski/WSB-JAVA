@@ -12,6 +12,10 @@ public class Main
         AnimalPet.Feed();
         AnimalPet.Feed();
         AnimalPet.Feed();
+        AnimalPet.Feed();
+        AnimalPet.Feed();
+        AnimalPet.Feed();
+
         AnimalPet.TakeForAWalk();
         AnimalPet.TakeForAWalk();
         AnimalPet.TakeForAWalk();
