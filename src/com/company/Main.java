@@ -6,6 +6,8 @@ public class Main
     public static void main(String[] args)
     {
 
+        Human me = new Human();
+        me.animalPet = "Jack";
         Animal AnimalPet = new Animal("dog");
 
         AnimalPet.Feed();
@@ -36,6 +38,17 @@ public class Main
         AnimalPet.TakeForAWalk();
         AnimalPet.TakeForAWalk();
         AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+        AnimalPet.TakeForAWalk();
+
 
 
 

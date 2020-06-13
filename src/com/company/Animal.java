@@ -3,7 +3,7 @@ package com.company;
 public class Animal extends Human
 {
 
-     public final String species;
+    final String species;
     private Double weight;
 
 
@@ -28,10 +28,13 @@ public class Animal extends Human
         System.out.println("Weight of animal is: " +weight);
 
         if (this.weight == 0){
+
             System.out.println("Sorry dude. Animal is dead!");
+            this.weight--;
         }
         else if (this.weight < 0){
             System.out.println("You cannot feed dead animal!!!");
+            System.exit(-1);
         }
     }
 
@@ -41,10 +44,14 @@ public class Animal extends Human
             System.out.println("Weight of animal is: " + weight);
         }
         if (this.weight == 0){
+
             System.out.println("Sorry dude. Animal is dead!");
+            this.weight--;
         }
         else if (this.weight < 0){
             System.out.println("Walk with dead animal?! I'm think the people will not be happy with this!");
+            System.exit(-1);
+
         }
 
     }
