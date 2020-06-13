@@ -3,12 +3,13 @@ package com.company;
 public class Animal extends Human
 {
 
-     public String species;
+     public final String species;
     private Double weight;
 
 
-    public Animal()
+    Animal(String species)
     {
+        this.species = species;
         if (species == "dog"){
             this.weight = 8.0;
         }
@@ -23,7 +24,7 @@ public class Animal extends Human
     }
 
     public void Feed(){
-        this.weight += 1;
+        this.weight++;
         System.out.println("Weight of animal is: " +weight);
 
         if (this.weight == 0){
@@ -35,9 +36,10 @@ public class Animal extends Human
     }
 
     public void TakeForAWalk(){
-        this.weight -= 1;
-        System.out.println("Weight of animal is: " +weight);
-
+        if (this.weight > 0) {
+            this.weight--;
+            System.out.println("Weight of animal is: " + weight);
+        }
         if (this.weight == 0){
             System.out.println("Sorry dude. Animal is dead!");
         }

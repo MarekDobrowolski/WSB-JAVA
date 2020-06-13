@@ -6,8 +6,8 @@ public class Main
     public static void main(String[] args)
     {
 
-        Animal AnimalPet = new Animal();
-        AnimalPet.species = "horse";
+        Animal AnimalPet = new Animal("dog");
+
         AnimalPet.Feed();
         AnimalPet.Feed();
         AnimalPet.Feed();
