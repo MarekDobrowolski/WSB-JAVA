@@ -23,22 +23,22 @@ public class Animal extends Human
 
     }
 
-    public void Feed(){
+    public void feed(){
         this.weight++;
         System.out.println("Weight of animal is: " +weight);
 
         if (this.weight == 0){
 
             System.out.println("Sorry dude. Animal is dead!");
-            this.weight--;
+            this.weight-= 2;
         }
         else if (this.weight < 0){
             System.out.println("You cannot feed dead animal!!!");
-            System.exit(-1);
+
         }
     }
 
-    public void TakeForAWalk(){
+    public void takeForAWalk(){
         if (this.weight > 0) {
             this.weight--;
             System.out.println("Weight of animal is: " + weight);
@@ -50,7 +50,7 @@ public class Animal extends Human
         }
         else if (this.weight < 0){
             System.out.println("Walk with dead animal?! I'm think the people will not be happy with this!");
-            System.exit(-1);
+
 
         }
 
