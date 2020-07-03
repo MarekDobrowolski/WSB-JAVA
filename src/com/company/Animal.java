@@ -35,6 +35,7 @@ public class Animal extends Human
         else if (this.weight < 0){
             System.out.println("You cannot feed dead animal!!!");
 
+
         }
     }
 
@@ -50,6 +51,7 @@ public class Animal extends Human
         }
         else if (this.weight < 0){
             System.out.println("Walk with dead animal?! I'm think the people will not be happy with this!");
+
 
 
         }

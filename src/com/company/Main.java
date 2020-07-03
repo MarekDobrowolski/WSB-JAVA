@@ -10,6 +10,7 @@ public class Main
         me.firstname = "Jack";
         me.lastname = "Sparrow";
         me.animalPet = "John";
+        me.setSalary(2000.00);
         Animal AnimalPet = new Animal("dog");
 
         AnimalPet.feed();
@@ -48,9 +49,14 @@ public class Main
         AnimalPet.feed();
 
         Car car = new Car();
-        me.car.colour = "black";
-        me.car.model = "Ibiza";
-        me.car.producer = "Seat";
+        me.setCar().colour = "black";
+        me.setCar().model = "Ibiza";
+        me.setCar().producer = "Seat";
+        me.setCar().value = 1900.00;
+
+
+
+
 
 
 
