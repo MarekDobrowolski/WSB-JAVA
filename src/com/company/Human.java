@@ -1,5 +1,7 @@
 package com.company;
 
+import devices.Car;
+
 public class Human {
     Animal animal;
     private Car car;
@@ -15,8 +17,7 @@ public class Human {
     public void setSalary(Double salary) {
         if (salary < 0) {
             System.out.println("Value must be greater than 0");
-        }
-        else {
+        } else {
 
             System.out.println(" The new payment has been sent to the accountant");
             System.out.println("The new annex to the contract can be collected from the accountant");
@@ -34,22 +35,21 @@ public class Human {
     }
 
     public void setCar(Car car) {
-        if (this.salary > car.value){
+        if (this.salary > car.value) {
             System.out.println("Yeah! you buy a new car by cash!");
             this.car = car;
-        }
-        else if (this.salary > (1/12.0 * car.value)){
+        } else if (this.salary > (1 / 12.0 * car.value)) {
             System.out.println("Yes, You buy a new car, but on credit");
             this.car = car;
-        }
-        else if (this.salary <= car.value){
+        } else if (this.salary <= car.value) {
             System.out.println("Sorry bro, go to school or something");
         }
 
-
-
-
-
         this.car = car;
+    }
+
+    @Override
+    public String toString() {
+        return "Salary: " + this.salary + " Car: " + this.car;
     }
 }
