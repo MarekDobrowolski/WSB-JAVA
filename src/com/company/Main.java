@@ -3,6 +3,8 @@ package com.company;
 public class Main {
     public static void main(String[] args) {
 
+        // Zadanie 1
+
         Animal animial = new Animal("cat");
         animial.feed();
 
@@ -11,5 +13,13 @@ public class Main {
         }
 
         animial.feed();
+
+        // Zadanie 2
+        Car car = new Car( "BMW","e36", 1989,"red");
+        Human human1 = new Human();
+        human1.car = car;
+
+
+
     }
 }
