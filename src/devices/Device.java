@@ -4,7 +4,8 @@ public abstract class Device {
 
     String producer;
     String model;
-    int year;
+    public int year;
+    Double value;
 
     @Override
     public String toString() {
