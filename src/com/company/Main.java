@@ -1,6 +1,7 @@
 package com.company;
 
 import devices.Car;
+import devices.Phone;
 
 public class Main {
     public static void main(String[] args) {
@@ -56,5 +57,11 @@ public class Main {
         System.out.println(car.toString());
         System.out.println(animial.toString());
         System.out.println(human1.toString());
+
+        // Zadanie 7
+        car.turnOn();
+        Phone phone = new Phone();
+        phone.turnOn();
+
     }
 }

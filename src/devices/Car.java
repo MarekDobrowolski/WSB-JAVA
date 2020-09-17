@@ -1,10 +1,10 @@
 package devices;
 
-public class Car {
-    final String producer;
-    final String model;
+public class Car extends Device {
+
+
     public Double value;
-    int year;
+
     String color;
 
     public Car(String producer, String model, int year, String color, Double value) {
@@ -15,10 +15,9 @@ public class Car {
         this.value = value;
     }
 
-    @Override
-    public String toString() {
-
-        return "Producer: " + this.producer + ", model: " + this.model + ", year: " + this.year + ", color: " + this.color + ", value: " + this.value;
+    public void turnOn(){
+        System.out.println("Engine starts");
     }
+
 }
 
