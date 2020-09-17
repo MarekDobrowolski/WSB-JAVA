@@ -3,7 +3,12 @@ package com.company;
 import creatures.Animal;
 import creatures.Pet;
 import devices.Car;
+import devices.Disel;
+import devices.LPG;
 import devices.Phone;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,7 +25,7 @@ public class Main {
         animial.feed();
 
         // Zadanie 2
-        Car car = new Car("BMW", "e36", 1989, "red", 4000.0);
+        Car car = new Disel("BMW", "e36", 1989, "red", 4000.0);
         Human human1 = new Human();
         //human1.car = car;
 
@@ -39,7 +44,7 @@ public class Main {
 
         // Zadanie 6
         //6.2
-        Car car2 = new Car("BMW", "e36", 1989, "red", 4000.0);
+        Car car2 = new LPG("BMW", "e36", 1989, "red", 4000.0);
 
         System.out.println("Porównianie przez equals() bez nadpisania:");
         System.out.println(car.equals(car2));
@@ -124,6 +129,16 @@ public class Main {
         System.out.println(pet);
         pet.feed(23.0);
         System.out.println(pet);
+
+        // Zadanie 10
+
+        Phone androidPhone = new Phone();
+        androidPhone.installAnnApp("Tinder");
+        androidPhone.installAnnApp("Tinder", "v1.1.2");
+        androidPhone.installAnnApp("Tinder", "v1.1.2", "googleplay.com/tinderv1.12.2");
+        List<String> applist = Arrays.asList("Tinder", "Badoo", "Facebook", "Gmail");
+        androidPhone.installAnnApp(applist);
+
 
     }
 }
