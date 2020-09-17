@@ -7,6 +7,7 @@ import devices.Disel;
 import devices.LPG;
 import devices.Phone;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -163,5 +164,22 @@ public class Main {
         // Stan po transakcj1:
         System.out.println("Seller: " + human2);
         System.out.println("Buyer: " + human3);
+
+
+        // Zadanie 12
+        Human newHuman  = new Human(5000.0, 6, 20000.0);
+
+        System.out.println("\n\n\n");
+        System.out.println(car2.ownersList);
+
+        System.out.println(car2.wasOwner(human2));
+        System.out.println(car2.wasOwner(newHuman));
+
+        System.out.println(car2.ifHaveSold(human2, human3));
+        System.out.println(car2.ifHaveSold(human3, human2));
+
+        System.out.println(car2.getNumberOfTransaction());
+
+
     }
 }

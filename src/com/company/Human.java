@@ -64,14 +64,14 @@ public class Human {
         if (this.salary > car.value) {
             System.out.println("Yeah! you buy a new car by cash!");
             this.garage[position] = car;
+            car.ownersList.add(this);
         } else if (this.salary > (1 / 12.0 * car.value)) {
             System.out.println("Yes, You buy a new car, but on credit");
             this.garage[position] = car;
+            car.ownersList.add(this);
         } else if (this.salary <= car.value) {
             System.out.println("Sorry bro, go to school or something");
         }
-
-        this.garage[position] = car;
     }
 
     public double getSumOfCarValue(){
