@@ -1,11 +1,25 @@
 package com.company;
 
 import devices.Car;
+import devices.Phone;
 
 public class Human {
-    Animal animal;
-    private Car car;
+    public Animal animal;
+    public Car car;
+    public Double cash;
+    public Phone phone;
     private Double salary;
+
+    public Human() {
+    }
+
+
+
+    public Human(Animal animal, Car car, Double cash) {
+        this.animal = animal;
+        this.car = car;
+        this.cash = cash;
+    }
 
     public Double getSalary() {
 
@@ -50,6 +64,8 @@ public class Human {
 
     @Override
     public String toString() {
-        return "Salary: " + this.salary + " Car: " + this.car;
+        return "Cash: " + this.cash + "Salary: " + this.salary + " Car: " + this.car + " Animal: " + this.animal + " Phone: " + phone;
     }
+
+
 }

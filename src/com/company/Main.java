@@ -63,5 +63,57 @@ public class Main {
         Phone phone = new Phone();
         phone.turnOn();
 
+
+        // Zadanie 8
+        Animal animalForSell = new Animal("Dog");
+        Human seller = new Human(animalForSell, null, 2000.0);
+        Human buyer = new Human(null, null, 2000.0);
+
+        // kiedy kupujący ma za mało gotówki
+        animalForSell.sell(seller, buyer, 3000.0);
+
+        // kiedy sprzedający nie posiada zwierzaka na sprzedaż
+        animalForSell.sell(buyer, seller, 1000.0);
+
+        System.out.println("#######");
+
+        // Stan przed transakcją:
+        System.out.println("Seller: " + seller);
+        System.out.println("Buyer: " + buyer);
+
+        // kiedy wszytkie warunki spelnione
+        animalForSell.sell(seller, buyer, 1000.0);
+
+        // Stan po transakcj1:
+        System.out.println("Seller: " + seller);
+        System.out.println("Buyer: " + buyer);
+
+        // phone
+        System.out.println("\n\nPhone:");
+        seller.phone = phone;
+
+        // Stan przed transakcją:
+        System.out.println("Seller: " + seller);
+        System.out.println("Buyer: " + buyer);
+
+        phone.sell(seller, buyer, 500.0);
+
+        // Stan po transakcj1:
+        System.out.println("Seller: " + seller);
+        System.out.println("Buyer: " + buyer);
+
+        // car
+        System.out.println("\n\nCar:");
+        seller.car = car;
+
+        // Stan przed transakcją:
+        System.out.println("Seller: " + seller);
+        System.out.println("Buyer: " + buyer);
+
+        car.sell(seller, buyer, 300.0);
+
+        // Stan po transakcj1:
+        System.out.println("Seller: " + seller);
+        System.out.println("Buyer: " + buyer);
     }
 }

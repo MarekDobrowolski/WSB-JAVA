@@ -1,6 +1,8 @@
 package com.company;
 
-public class Animal {
+import com.sun.management.GarbageCollectionNotificationInfo;
+
+public class Animal implements salleable{
     final String species;
     private double weight;
 
@@ -40,11 +42,26 @@ public class Animal {
         if (this.weight <= 0)
             System.out.println("Sorry, Your animal is dead! Don't walk with dead animal");
 
-
     }
 
     @Override
     public String toString() {
         return " Species: " + this.species + ", Weight: " + this.weight;
     }
+
+    public void sell(Human seller, Human buyer, Double price){
+        if (seller.animal == this && buyer.cash >= price){
+            buyer.cash -= price;
+            seller.cash += price;
+            seller.animal = null;
+            buyer.animal = this;
+            System.out.println(buyer + " buy " + this + " from " + seller + " for " + price);
+        }
+        else{
+            System.out.println("Transaction failed");
+        }
+    }
+
+
+
 }

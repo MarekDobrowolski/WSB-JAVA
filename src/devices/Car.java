@@ -1,6 +1,9 @@
 package devices;
 
-public class Car extends Device {
+import com.company.Human;
+import com.company.salleable;
+
+public class Car extends Device implements salleable {
 
 
     public Double value;
@@ -17,6 +20,19 @@ public class Car extends Device {
 
     public void turnOn(){
         System.out.println("Engine starts");
+    }
+
+    public void sell(Human seller, Human buyer, Double price){
+        if (seller.car == this && buyer.cash >= price){
+            buyer.cash -= price;
+            seller.cash += price;
+            seller.car = null;
+            buyer.car = this;
+            System.out.println(buyer + " buy " + this + " from " + seller + " for " + price);
+        }
+        else{
+            System.out.println("Transaction failed");
+        }
     }
 
 }
