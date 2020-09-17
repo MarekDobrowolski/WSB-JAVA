@@ -15,10 +15,22 @@ public class Main {
         animial.feed();
 
         // Zadanie 2
-        Car car = new Car( "BMW","e36", 1989,"red");
+        Car car = new Car( "BMW","e36", 1989,"red",4000.0);
         Human human1 = new Human();
-        human1.car = car;
+        //human1.car = car;
 
+        // Zadanie 5
+        System.out.println("----");
+        human1.setSalary(5000.0);
+        human1.setCar(car);
+
+        System.out.println("----");
+        human1.setSalary(1000.0);
+        human1.setCar(car);
+
+        System.out.println("----");
+        human1.setSalary(1.0);
+        human1.setCar(car);
 
 
     }

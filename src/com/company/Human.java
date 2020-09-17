@@ -2,7 +2,7 @@ package com.company;
 
 public class Human {
     Animal animal;
-    Car car;
+    private Car car;
     private Double salary;
 
     public Double getSalary() {
@@ -27,5 +27,29 @@ public class Human {
         }
 
 
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        if (this.salary > car.value){
+            System.out.println("Yeah! you buy a new car by cash!");
+            this.car = car;
+        }
+        else if (this.salary > (1/12.0 * car.value)){
+            System.out.println("Yes, You buy a new car, but on credit");
+            this.car = car;
+        }
+        else if (this.salary <= car.value){
+            System.out.println("Sorry bro, go to school or something");
+        }
+
+
+
+
+
+        this.car = car;
     }
 }
