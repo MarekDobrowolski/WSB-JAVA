@@ -1,8 +1,10 @@
-package com.company;
+package creatures;
 
+import com.company.Human;
+import com.company.salleable;
 import com.sun.management.GarbageCollectionNotificationInfo;
 
-public class Animal implements salleable{
+public abstract class Animal implements salleable, feedable {
     final String species;
     private double weight;
 
@@ -29,8 +31,10 @@ public class Animal implements salleable{
         }
         if (this.weight <= 0)
             System.out.println("Sorry, Your animal is dead!");
+    }
 
-
+    public void feed(Double foodWeight){
+        this.weight += foodWeight / 2;
     }
 
     public void takeForAWalk() {

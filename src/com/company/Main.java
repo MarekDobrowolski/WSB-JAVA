@@ -1,5 +1,7 @@
 package com.company;
 
+import creatures.Animal;
+import creatures.Pet;
 import devices.Car;
 import devices.Phone;
 
@@ -8,7 +10,7 @@ public class Main {
 
         // Zadanie 1
 
-        Animal animial = new Animal("cat");
+        Animal animial = new Pet("cat");
         animial.feed();
 
         for (int i = 0; i < 12; i++) {
@@ -65,7 +67,7 @@ public class Main {
 
 
         // Zadanie 8
-        Animal animalForSell = new Animal("Dog");
+        Animal animalForSell = new Pet("Dog");
         Human seller = new Human(animalForSell, null, 2000.0);
         Human buyer = new Human(null, null, 2000.0);
 
@@ -115,5 +117,13 @@ public class Main {
         // Stan po transakcj1:
         System.out.println("Seller: " + seller);
         System.out.println("Buyer: " + buyer);
+
+        // Zadanie 9
+
+        Pet pet = new Pet("mouse");
+        System.out.println(pet);
+        pet.feed(23.0);
+        System.out.println(pet);
+
     }
 }
